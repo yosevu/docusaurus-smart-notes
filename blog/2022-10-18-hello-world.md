@@ -1,18 +1,11 @@
 ---
-slug: greetings
-title: Greetings!
+slug: hello-world
+title: hello world
 authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
+  - name: Yosevu Kilonzo 
+tags: [hello-world]
 ---
 
-Congratulations, you have made your first post!
+hello world
 
-Feel free to play around and edit this post as much you like.
+[[Smart notes]]

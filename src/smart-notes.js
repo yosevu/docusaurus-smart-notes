@@ -9,7 +9,7 @@ function transformWikiLinksToBacklinks (ast) {
 
 function appendBacklinks(ast) {
   visit(ast, (node) => {
-    console.log('debug', node);
+    // console.log('debug', node);
   });
 }
 
