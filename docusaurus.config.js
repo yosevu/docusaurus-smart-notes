@@ -44,6 +44,7 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 
           remarkPlugins: [wikiLink, smartNotes],
+          blogSidebarTitle: 'Connected notes',
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

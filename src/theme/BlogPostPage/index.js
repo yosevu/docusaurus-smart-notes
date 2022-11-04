@@ -29,9 +29,9 @@ function BlogPostPageContent({sidebar, children}) {
       }>
       <BlogPostItem>{children}</BlogPostItem>
 
-      {(nextItem || prevItem) && (
+      {/* {(nextItem || prevItem) && (
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />
-      )}
+      )} */}
     </BlogLayout>
   );
 }
