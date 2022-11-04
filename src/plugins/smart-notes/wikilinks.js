@@ -7,20 +7,10 @@ function transformWikiLinksToBacklinks (ast) {
   });
 }
 
-function appendBacklinks(ast) {
-  visit(ast, (node) => {
-    // console.log('debug', node);
-  });
-}
-
-function plugin (options) {
-  const transformer = async (ast) => {
+function wikilinks (options) {
+  return async (ast) => {
     transformWikiLinksToBacklinks(ast);
-
-    appendBacklinks(ast);
   }
-
-  return transformer;
 }
 
-module.exports = plugin;
+module.exports = wikilinks;

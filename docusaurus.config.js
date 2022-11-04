@@ -4,7 +4,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const wikiLink = require("remark-wiki-link");
-const smartNotes = require('./src/smart-notes');
+const smartNotesPlugins = require('./src/plugins/smart-notes/index.js');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,7 +43,7 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 
-          remarkPlugins: [wikiLink, smartNotes],
+          remarkPlugins: [wikiLink, ...smartNotesPlugins],
           blogSidebarTitle: 'Connected notes',
         },
         theme: {
