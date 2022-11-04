@@ -1,4 +1,7 @@
-const wikilinks = require('./wikilinks');
-const backlinks = require('./backlinks');
+const collectBacklinks = require('./collectBacklinks');
+const transformWikilinks = require('./transformWikilinks');
 
-module.exports = [wikilinks, backlinks];
+module.exports = {
+  collectBacklinks,
+  transformWikilinks,
+};

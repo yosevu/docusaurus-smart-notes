@@ -7,6 +7,9 @@ import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
+import {usePluginData} from '@docusaurus/useGlobalData';
+
+
 function BlogPostPageContent({sidebar, children}) {
   const {metadata, toc} = useBlogPost();
   const {nextItem, prevItem, frontMatter} = metadata;
@@ -36,6 +39,8 @@ function BlogPostPageContent({sidebar, children}) {
   );
 }
 export default function BlogPostPage(props) {
+  console.log(usePluginData('collect-backlinks'));
+  
   const BlogPostContent = props.content;
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>
