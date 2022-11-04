@@ -36,6 +36,7 @@ const config = {
       ({
         docs: false,
         blog: {
+          routeBasePath: '/',
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -52,45 +53,46 @@ const config = {
   ],
 
   themes: ['mdx-v2'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: "Yosevu's notes",
         items: [
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          // { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   href: "https://github.com/facebook/docusaurus",
+          //   label: "GitHub",
+          //   position: "right",
+          // },
         ],
       },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
+      // footer: {
+      //   style: "dark",
+      //   links: [
+      //     {
+      //       items: [
+      //         {
+      //           label: "Blog",
+      //           to: "/blog",
+      //         },
+      //         {
+      //           label: "Twitter",
+      //           href: "https://twitter.com/docusaurus",
+      //         },
              
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${
-          new Date().getFullYear()
-        } My Project, Inc. Built with Docusaurus.`,
-      },
+      //         {
+      //           label: "GitHub",
+      //           href: "https://github.com/facebook/docusaurus",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Copyright © ${
+      //     new Date().getFullYear()
+      //   } My Project, Inc. Built with Docusaurus.`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
